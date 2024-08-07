@@ -15,6 +15,7 @@
     "productName": "Crunchyroll",
     "files": [
       "index.js",
+      "preload.js",
       "package.json",
       "static/**/*",
       "img/**/*"
