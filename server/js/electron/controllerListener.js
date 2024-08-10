@@ -15,7 +15,7 @@ const cancelAnimationFrame = window.cancelAnimationFrame;
 let gpIndex = -1;
 let animationFrameId;
 
-export const setupGamepadEventListener = () => {
+const setupGamepadEventListener = () => {
   window.addEventListener("gamepadconnected", function (event) {
     gpIndex = event.gamepad.index;
     const gp = navigator.getGamepads()[gpIndex];
@@ -46,7 +46,7 @@ function updateLoop() {
   }
 }
 
-export const controllerNavigation = (gp) => {
+const controllerNavigation = (gp) => {
   const el = document.activeElement;
   const dPadUp = gp.buttons[12];
   const dPadDown = gp.buttons[13];
