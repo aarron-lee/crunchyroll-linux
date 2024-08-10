@@ -23,7 +23,7 @@ window.keyboard = {
         { value: "D", number: "$", symbol: "\\", size: 1 },
         { value: "F", number: "_", symbol: "*", size: 1 },
         { value: "G", number: "&", symbol: "'", size: 1 },
-        { value: "H", number: "-", symbol: "\"", size: 1 },
+        { value: "H", number: "-", symbol: '"', size: 1 },
         { value: "J", number: "+", symbol: "=", size: 1 },
         { value: "K", number: "(", symbol: ">", size: 1 },
         { value: "L", number: ")", symbol: "<", size: 1 },
@@ -164,6 +164,9 @@ window.keyboard = {
       case tvKey.KEY_ENTER:
         keyboard.action(keyboard.selected);
         break;
+      default:
+        keyboard.handleKeyboardInput(keyboard.selected, event);
+        break;
     }
   },
 
@@ -179,6 +182,24 @@ window.keyboard = {
           cols[a].className = cols[a].className.replace(" selected", "");
         }
       }
+    }
+  },
+
+  handleKeyboardInput(selected, event) {
+    const current_value = keyboard.input.value;
+
+    const valid_input =
+      "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM`1234567890-=~!@#$%^&*()_+[];',./{}|:<>?¿";
+    if (valid_input.indexOf(event.key) > 0) {
+      keyboard.input.value = current_value + event.key;
+    }
+    if (event.keyCode === 32) {
+      // space
+      keyboard.input.value = current_value + " ";
+    }
+    if (event.keyCode === 8 && current_value.length > 0) {
+      // backspace
+      keyboard.input.value = current_value.substr(0, current_value.length - 1);
     }
   },
 
