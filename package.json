@@ -4,7 +4,7 @@
   "description": "Linux Frontend for Crunchyroll",
   "main": "index.js",
   "scripts": {
-    "electron-run": "sh ./electron_build.sh && cd electron && npm install && npm run start",
+    "start": "sh ./electron_build.sh && cd electron && npm install && npm run start",
     "electron-build": "sh ./electron_build.sh && cd electron && npm install && npm run build"
   },
   "repository": {
