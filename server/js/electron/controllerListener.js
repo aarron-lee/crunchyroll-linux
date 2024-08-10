@@ -98,4 +98,4 @@ function sendButtonPressToElectronOriginal(buttonPressed) {
   }
 }
 
-setupGamepadEventListener();
+// setupGamepadEventListener();
