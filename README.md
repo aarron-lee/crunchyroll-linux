@@ -33,13 +33,13 @@ This is a Linux port of the [Unofficial Tizen Crunchyroll App](https://github.co
 - [x] Settings screen
 - [x] Browse elements by categories
 - [x] My list screen and workflow
+- [x] Basic external keyboard support for inputting username/password and search
 
 ### Todo Features
 
 - [] Game Controller support - steam deck workaround is to use a steam input community controller profile
-- [] External Keyboard support for inputting username/password
 - [] Standard keyboard controls, such as spacebar for pause/play
-- [] Fix Exit app functionality
+- [] make bundled onscreen keyboard optional
 - [] (optional) touchscreen support
 
 # Install
@@ -52,7 +52,7 @@ Install it with an AppImage manager, my recommendation would be [GearLever](http
 
 Follow the regular install instructions, but afterwards also add it to Steam as a non-Steam game.
 
-Then, in game mode, make sure to enable the Crunchyroll steam input community controller layout. It might require you to show all available layouts while selecting the layout.
+Then, in game mode, make sure to enable a Steam input community controller layout. It might require you to show all available layouts while selecting the layout.
 
 I've tested the `Streaming Controls` Steam input community layout by Bleiodes, which works fairly well.
 
@@ -62,7 +62,7 @@ Also, in the Steam Game settings for the app, set the resolution as 1080p. The A
 
 node and npm are required dependencies.
 
-run `npm run electron-run` for to run the app.
+run `npm start` for to run the app.
 
 There is no hot-reloading, so you must re-run the command after code changes are made.
 
