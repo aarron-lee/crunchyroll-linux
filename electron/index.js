@@ -28,6 +28,9 @@ function createWindow() {
   ipcMain.on("gamepadButtonPress", (_, buttonName) => {
     handleGamepadButtonPress(win, buttonName);
   });
+  ipcMain.on("exitApp", () => {
+    app.quit();
+  });
 }
 
 app.whenReady().then(async () => {
