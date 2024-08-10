@@ -58,35 +58,25 @@ function handleGamepadButtonPress(mainWindow, buttonName) {
   if (buttonName === "aButton") {
     mainWindow.webContents.sendInputEvent({
       type: "keyDown",
-      keyCode: "space",
+      keyCode: "enter",
     });
     mainWindow.webContents.sendInputEvent({ type: "keyUp", keyCode: "space" });
   }
   if (buttonName === "dPadDown") {
     mainWindow.webContents.sendInputEvent({
       type: "keyDown",
-      keyCode: "tab",
+      keyCode: "down",
     });
-    mainWindow.webContents.sendInputEvent({ type: "keyUp", keyCode: "tab" });
+    mainWindow.webContents.sendInputEvent({ type: "keyUp", keyCode: "down" });
   }
   if (buttonName === "dPadUp") {
     mainWindow.webContents.sendInputEvent({
       type: "keyDown",
-      keyCode: "shift",
-    });
-    mainWindow.webContents.sendInputEvent({
-      type: "keyDown",
-      keyCode: "tab",
-      modifiers: ["shift"],
+      keyCode: "up",
     });
     mainWindow.webContents.sendInputEvent({
       type: "keyUp",
-      keyCode: "tab",
-      modifiers: ["shift"],
-    });
-    mainWindow.webContents.sendInputEvent({
-      type: "keyUp",
-      keyCode: "shift",
+      keyCode: "up",
     });
   }
   if (buttonName == "dPadLeft") {
