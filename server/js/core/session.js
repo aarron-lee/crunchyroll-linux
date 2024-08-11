@@ -173,28 +173,6 @@ window.session = {
   },
 
   load_profiles: function (callback) {
-    /* example profiles arr
-    [
-      {
-        "profile_id": "uuid",
-        "email": "email",
-        "username": "userA",
-        "profile_name": "profileA",
-        "can_switch": true,
-        "is_primary": true,
-        "is_selected": true,
-        "avatar": "png",
-        "maturity_rating": "M3",
-        "extended_maturity_rating": {
-            "BR": "16",
-            "UN": "16"
-        },
-        "preferred_communication_language": "en-US",
-        "preferred_content_audio_language": "en-US",
-        "preferred_content_subtitle_language": "en-US"
-      }
-    ]
-      */
     try {
       service.profiles({
         success: function (response) {
