@@ -44,11 +44,21 @@ This is a Linux port of the [Unofficial Tizen Crunchyroll App](https://github.co
 
 # Install
 
+## Manual Install
+
 Download the latest AppImage from [releases](https://github.com/aarron-lee/crunchyroll-linux/releases)
 
 Install it with an AppImage manager, my recommendation would be [GearLever](https://flathub.org/apps/it.mijorus.gearlever), but other alternatives like AppImageLauncher also works
 
-# Steam Deck / Bazzite / ChimeraOS Installation
+## Quick Install
+
+run the following script in terminal:
+
+```
+curl -L https://github.com/aarron-lee/crunchyroll-linux/raw/main/install.sh | sh
+```
+
+## Steam Deck / Bazzite / ChimeraOS Installation
 
 Follow the regular install instructions, but afterwards also add it to Steam as a non-Steam game.
 
