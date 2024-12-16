@@ -55,7 +55,7 @@ Install it with an AppImage manager, my recommendation would be [GearLever](http
 run the following script in terminal:
 
 ```
-curl -L https://github.com/aarron-lee/crunchyroll-linux/raw/main/install.sh | sh
+curl -L https://github.com/aarron-lee/crunchyroll-linux/raw/master/install.sh | sh
 ```
 
 ## Steam Deck / Bazzite / ChimeraOS Installation
