@@ -15,36 +15,42 @@ const cancelAnimationFrame = window.cancelAnimationFrame;
 let gpIndex = -1;
 let animationFrameId;
 
+let enabled = window.localStorage.getItem("controllerSupport") === "ENABLE";
+
 const setupGamepadEventListener = () => {
-  window.addEventListener("gamepadconnected", function (event) {
+  const handleController = (event) => {
     gpIndex = event.gamepad.index;
     const gp = navigator.getGamepads()[gpIndex];
     if (!gp) return;
 
     updateLoop();
-  });
-
-  window.addEventListener("gamepaddisconnected", function (event) {
+  };
+  const handleControllerDisconnect = (event) => {
     // Do something on disconnect
     gpIndex = -1;
     if (animationFrameId) {
       cancelAnimationFrame(animationFrameId);
       animationFrameId = undefined;
     }
-  });
+  };
+
+  window.addEventListener("gamepadconnected", handleController);
+
+  window.addEventListener("gamepaddisconnected", handleControllerDisconnect);
 };
 
-function updateLoop() {
+const updateLoop = () => {
   if (gpIndex >= 0) {
     const gp = navigator.getGamepads()[gpIndex];
     if (gp) {
       // gamepad is connected
-
-      controllerNavigation(gp);
+      if (enabled) {
+        controllerNavigation(gp);
+      }
     }
     animationFrameId = requestAnimationFrame(updateLoop);
   }
-}
+};
 
 const controllerNavigation = (gp) => {
   const el = document.activeElement;
@@ -98,4 +104,8 @@ function sendButtonPressToElectronOriginal(buttonPressed) {
   }
 }
 
-// setupGamepadEventListener();
+window.setControllerEnabled = (b) => {
+  enabled = Boolean(b);
+};
+
+setupGamepadEventListener();

@@ -1,3 +1,5 @@
+const CONTROLLER_KEY = "controllerSupport";
+
 window.settings = {
   id: "settings-screen",
   isDetails: false,
@@ -28,6 +30,11 @@ window.settings = {
       type: "list",
     },
     {
+      id: "controller",
+      label: "settings.menu.controller",
+      type: "list",
+    },
+    {
       id: "about",
       label: "settings.menu.about",
       type: "html",
@@ -44,6 +51,10 @@ window.settings = {
   bool: {
     M2: "NO",
     M3: "YES",
+  },
+  controllerSupport: {
+    DISABLE: "Disable Game Controller Support",
+    ENABLE: "Enable Game Controller Support",
   },
   previous: NaN,
 
@@ -195,6 +206,10 @@ window.settings = {
             var options = settings.bool;
             var active = session.storage.account.mature;
             break;
+          case "controller":
+            var options = settings.controllerSupport;
+            var active = window.localStorage.getItem(CONTROLLER_KEY);
+            break;
         }
 
         return (
@@ -298,6 +313,20 @@ window.settings = {
               });
             };
             break;
+          case "controller":
+            var options = settings.controllerSupport;
+            // DISABLE ENABLE
+            var method = function (value) {
+              console.log("controllerSupport", value);
+              if (value === "DISABLE") {
+                window.localStorage.setItem(CONTROLLER_KEY, "DISABLE");
+              } else if (value === "ENABLE") {
+                window.localStorage.setItem(CONTROLLER_KEY, "ENABLE");
+              }
+              window.setControllerEnabled &&
+                window.setControllerEnabled(value === "ENABLE");
+              session.update();
+            };
         }
         method(Object.keys(options)[index]);
         optionsMenu.removeClass("active");

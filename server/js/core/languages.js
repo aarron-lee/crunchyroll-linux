@@ -15,6 +15,7 @@ window.languages = {
     },
     menu: {
       profiles: "Profiles",
+      controller: "Game Controller",
       search: "खोजें",
       home: "होम",
       list: "मेरी सूची",
@@ -60,6 +61,7 @@ window.languages = {
     settings: {
       menu: {
         profiles: "Profiles",
+        controller: "Game Controller",
         application_lang: "एप्लिकेशन भाषा",
         audio_lang: "ऑडियो भाषा",
         subtitle_lang: "सबटाइटल भाषा",
@@ -93,6 +95,7 @@ window.languages = {
     },
     menu: {
       profiles: "Profiles",
+      controller: "Game Controller",
       search: "بحث",
       home: "الصفحة الرئيسية",
       list: "قائمتي",
@@ -137,6 +140,7 @@ window.languages = {
     settings: {
       menu: {
         profiles: "Profiles",
+        controller: "Game Controller",
         application_lang: "لغة التطبيق",
         audio_lang: "لغة الصوت",
         subtitle_lang: "لغة الترجمة",
@@ -170,6 +174,7 @@ window.languages = {
     },
     menu: {
       profiles: "Profiles",
+      controller: "Game Controller",
       search: "Cerca",
       home: "Inici",
       list: "La meva llista",
@@ -214,6 +219,7 @@ window.languages = {
     settings: {
       menu: {
         profiles: "Profiles",
+        controller: "Game Controller",
         application_lang: "Idioma de l'aplicació",
         audio_lang: "Idioma de l'àudio",
         subtitle_lang: "Idioma dels subtítols",
@@ -247,6 +253,7 @@ window.languages = {
     },
     menu: {
       profiles: "Profiles",
+      controller: "Game Controller",
       search: "Suchen",
       home: "Startseite",
       list: "Meine Liste",
@@ -291,6 +298,7 @@ window.languages = {
     settings: {
       menu: {
         profiles: "Profiles",
+        controller: "Game Controller",
         application_lang: "Anwendungssprache",
         audio_lang: "Audiosprache",
         subtitle_lang: "Untertitelsprache",
@@ -329,6 +337,7 @@ window.languages = {
       history: "History",
       browse: "Browse",
       profiles: "Profiles",
+      controller: "Game Controller",
       settings: "Settings",
       logout: "Logout",
     },
@@ -368,6 +377,7 @@ window.languages = {
     settings: {
       menu: {
         profiles: "Profiles",
+        controller: "Game Controller",
         application_lang: "Application Language",
         audio_lang: "Audio Language",
         subtitle_lang: "Subtitle Language",
@@ -401,6 +411,7 @@ window.languages = {
     },
     menu: {
       profiles: "Profiles",
+      controller: "Game Controller",
       search: "Buscar",
       home: "Inicio",
       list: "Mi lista",
@@ -445,6 +456,7 @@ window.languages = {
     settings: {
       menu: {
         profiles: "Profiles",
+        controller: "Game Controller",
         application_lang: "Idioma de la aplicación",
         audio_lang: "Idioma del audio",
         subtitle_lang: "Idioma de los subtítulos",
@@ -478,6 +490,7 @@ window.languages = {
     },
     menu: {
       profiles: "Profiles",
+      controller: "Game Controller",
       search: "Rechercher",
       home: "Accueil",
       list: "Ma liste",
@@ -522,6 +535,7 @@ window.languages = {
     settings: {
       menu: {
         profiles: "Profiles",
+        controller: "Game Controller",
         application_lang: "Langue de l'application",
         audio_lang: "Langue audio",
         subtitle_lang: "Langue des sous-titres",
@@ -555,6 +569,7 @@ window.languages = {
     },
     menu: {
       profiles: "Profiles",
+      controller: "Game Controller",
       search: "Cari",
       home: "Beranda",
       list: "Daftar saya",
@@ -599,6 +614,7 @@ window.languages = {
     settings: {
       menu: {
         profiles: "Profiles",
+        controller: "Game Controller",
         application_lang: "Bahasa Aplikasi",
         audio_lang: "Bahasa Audio",
         subtitle_lang: "Bahasa Subjudul",
@@ -632,6 +648,7 @@ window.languages = {
     },
     menu: {
       profiles: "Profiles",
+      controller: "Game Controller",
       search: "Cerca",
       home: "Home",
       list: "La mia lista",
@@ -676,6 +693,7 @@ window.languages = {
     settings: {
       menu: {
         profiles: "Profiles",
+        controller: "Game Controller",
         application_lang: "Lingua dell'applicazione",
         audio_lang: "Lingua dell'audio",
         subtitle_lang: "Lingua dei sottotitoli",
@@ -709,6 +727,7 @@ window.languages = {
     },
     menu: {
       profiles: "Profiles",
+      controller: "Game Controller",
       search: "Cari",
       home: "Laman Utama",
       list: "Senarai Saya",
@@ -753,6 +772,7 @@ window.languages = {
     settings: {
       menu: {
         profiles: "Profiles",
+        controller: "Game Controller",
         application_lang: "Bahasa Aplikasi",
         audio_lang: "Bahasa Audio",
         subtitle_lang: "Bahasa Sarikata",
@@ -786,6 +806,7 @@ window.languages = {
     },
     menu: {
       profiles: "Profiles",
+      controller: "Game Controller",
       search: "Szukaj",
       home: "Strona główna",
       list: "Moja lista",
@@ -830,6 +851,7 @@ window.languages = {
     settings: {
       menu: {
         profiles: "Profiles",
+        controller: "Game Controller",
         application_lang: "Język aplikacji",
         audio_lang: "Język dźwięku",
         subtitle_lang: "Język napisów",
@@ -863,6 +885,7 @@ window.languages = {
     },
     menu: {
       profiles: "Profiles",
+      controller: "Game Controller",
       search: "Buscar",
       home: "Página inicial",
       list: "Minha lista",
@@ -907,6 +930,7 @@ window.languages = {
     settings: {
       menu: {
         profiles: "Profiles",
+        controller: "Game Controller",
         application_lang: "Idioma da aplicação",
         audio_lang: "Idioma do áudio",
         subtitle_lang: "Idioma das legendas",
@@ -940,6 +964,7 @@ window.languages = {
     },
     menu: {
       profiles: "Profiles",
+      controller: "Game Controller",
       search: "Поиск",
       home: "Главная",
       list: "Мой список",
@@ -984,6 +1009,7 @@ window.languages = {
     settings: {
       menu: {
         profiles: "Profiles",
+        controller: "Game Controller",
         application_lang: "Язык приложения",
         audio_lang: "Язык аудио",
         subtitle_lang: "Язык субтитров",
@@ -1017,6 +1043,7 @@ window.languages = {
     },
     menu: {
       profiles: "Profiles",
+      controller: "Game Controller",
       search: "ค้นหา",
       home: "หน้าหลัก",
       list: "รายการของฉัน",
@@ -1061,6 +1088,7 @@ window.languages = {
     settings: {
       menu: {
         profiles: "Profiles",
+        controller: "Game Controller",
         application_lang: "ภาษาแอปพลิเคชั่น",
         audio_lang: "ภาษาเสียง",
         subtitle_lang: "ภาษาบทย่อย",
@@ -1094,6 +1122,7 @@ window.languages = {
     },
     menu: {
       profiles: "Profiles",
+      controller: "Game Controller",
       search: "Ara",
       home: "Ana Sayfa",
       list: "Listem",
@@ -1138,6 +1167,7 @@ window.languages = {
     settings: {
       menu: {
         profiles: "Profiles",
+        controller: "Game Controller",
         application_lang: "Uygulama Dili",
         audio_lang: "Ses Dili",
         subtitle_lang: "Altyazı Dili",
@@ -1171,6 +1201,7 @@ window.languages = {
     },
     menu: {
       profiles: "Profiles",
+      controller: "Game Controller",
       search: "Tìm kiếm",
       home: "Trang chủ",
       list: "Danh sách của tôi",
@@ -1215,6 +1246,7 @@ window.languages = {
     settings: {
       menu: {
         profiles: "Profiles",
+        controller: "Game Controller",
         application_lang: "Ngôn ngữ ứng dụng",
         audio_lang: "Ngôn ngữ âm thanh",
         subtitle_lang: "Ngôn ngữ phụ đề",
