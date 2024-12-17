@@ -34,10 +34,10 @@ This is a Linux port of the [Unofficial Tizen Crunchyroll App](https://github.co
 - [x] Browse elements by categories
 - [x] My list screen and workflow
 - [x] Basic external keyboard support for inputting username/password and search
+- [x] Game Controller support
 
 ### Todo Features
 
-- [] Game Controller support - steam deck workaround is to use a steam input community controller profile
 - [] Standard keyboard controls, such as spacebar for pause/play
 - [] make bundled onscreen keyboard optional
 - [] (optional) touchscreen support
@@ -61,6 +61,8 @@ curl -L https://github.com/aarron-lee/crunchyroll-linux/raw/master/install.sh | 
 ## Steam Deck / Bazzite / ChimeraOS Installation
 
 Follow the regular install instructions, but afterwards also add it to Steam as a non-Steam game.
+
+The app should have basic controller support working, but if you prefer to use Steam Input to manage navigation, make sure to disable `Game Controller Support` in the app's settings.
 
 Then, in game mode, make sure to enable a Steam input community controller layout. It might require you to show all available layouts while selecting the layout.
 
