@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-git checkout main
+git checkout master
 
 if [ "$EUID" -eq 0 ]
   then echo "Please do not run as root"
