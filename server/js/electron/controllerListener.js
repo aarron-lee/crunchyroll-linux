@@ -18,6 +18,12 @@ let animationFrameId;
 let enabled = window.localStorage.getItem("controllerSupport") === "ENABLE";
 
 const setupGamepadEventListener = () => {
+  if (!window.localStorage.getItem("controllerSupportInitialized")) {
+    // set default value, which is ENABLE
+    window.localStorage.setItem("controllerSupport", "ENABLE");
+    window.localStorage.setItem("controllerSupportInitialized", "1");
+  }
+
   const handleController = (event) => {
     gpIndex = event.gamepad.index;
     const gp = navigator.getGamepads()[gpIndex];
@@ -108,4 +114,4 @@ window.setControllerEnabled = (b) => {
   enabled = Boolean(b);
 };
 
-setupGamepadEventListener();
+setTimeout(setupGamepadEventListener, 1500);
