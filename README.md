@@ -34,7 +34,7 @@ This is a Linux port of the [Unofficial Tizen Crunchyroll App](https://github.co
 - [x] Browse elements by categories
 - [x] My list screen and workflow
 - [x] Basic external keyboard support for inputting username/password and search
-- [x] Game Controller support
+- [x] Basic Game Controller support
 
 ### Todo Features
 
