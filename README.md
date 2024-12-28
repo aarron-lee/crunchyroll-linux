@@ -62,7 +62,7 @@ curl -L https://github.com/aarron-lee/crunchyroll-linux/raw/master/install.sh | 
 
 Follow the regular install instructions, but afterwards also add it to Steam as a non-Steam game.
 
-The app should have basic controller support working, but if you prefer to use Steam Input to manage navigation, make sure to disable `Game Controller Support` in the app's settings.
+**The app should have basic controller support working, but if you prefer to use Steam Input to manage navigation, make sure to disable `Game Controller Support` in the Crunchyroll app's settings, and set a controller config in Steam Input.**
 
 Then, in game mode, make sure to enable a Steam input community controller layout. It might require you to show all available layouts while selecting the layout.
 
