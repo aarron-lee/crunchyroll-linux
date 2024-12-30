@@ -1,5 +1,7 @@
 # Crunchyroll for Linux
 
+![app.jpg](https://raw.githubusercontent.com/aarron-lee/crunchyroll-tizen/master/app.jpg)
+
 ![layouts.gif](https://raw.githubusercontent.com/aarron-lee/crunchyroll-tizen/master/layouts.gif)
 
 # Table of Contents
