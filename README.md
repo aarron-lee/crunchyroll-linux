@@ -9,6 +9,7 @@
 - [Installation](#install)
 - [Steam Deck / Bazzite / ChimeraOS Install](#steam-deck--bazzite--chimeraos-installation)
 - [Development](#development)
+- [Controller Support](#controller-support)
 - [Attribution](#attribution)
 
 # Description:
@@ -69,6 +70,23 @@ Then, in game mode, make sure to enable a Steam input community controller layou
 I've tested the `Streaming Controls` Steam input community layout by Bleiodes, which works fairly well.
 
 Also, in the Steam Game settings for the app, set the resolution as 1080p. The App was not designed for higher resolutions, you may see visual bugs at higher than 1080p resolutions.
+
+# Controller Support
+
+Note that the app has built in native game controller support.
+
+However, I personally find that I prefer Steam Input for controller management, rather than the native game controller support.
+
+To use Steam Input do the following:
+
+1. first login to the crunchyroll app
+2. In the Crunchyroll app settings, disable the game controller support setting
+3. In Steam, make sure Steam Input is enabled for the crunchyroll app.
+4. Either use a community controller profile
+5. Alternatively, map the following keyboard keys for the minimal mappings required for navigation:
+  - Enter to A (Playstation X)
+  - Esc to B (Playstation Circle)
+  - D-pad to Keyboard arrow keys
 
 # Development
 
