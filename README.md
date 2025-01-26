@@ -22,6 +22,8 @@ This is a Linux port of the [Unofficial Tizen Crunchyroll App](https://github.co
 
 # Features
 
+Note that this is just a port of the Unofficial Tizen Crunchyroll App, there's currently no plans for to do any additional dev work or add new features. PRs are welcome.
+
 - [x] Auth workflow
 - [x] Home screen
 - [x] Profiles
@@ -38,12 +40,6 @@ This is a Linux port of the [Unofficial Tizen Crunchyroll App](https://github.co
 - [x] My list screen and workflow
 - [x] Basic external keyboard support for inputting username/password and search
 - [x] Basic Game Controller support
-
-### Todo Features
-
-- [] Standard keyboard controls, such as spacebar for pause/play
-- [] make bundled onscreen keyboard optional
-- [] (optional) touchscreen support
 
 # Install
 
