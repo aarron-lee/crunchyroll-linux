@@ -31,7 +31,7 @@
   },
   "keywords": [],
   "devDependencies": {
-    "electron": "github:castlabs/electron-releases#v31.3.0+wvcus",
+    "electron": "github:castlabs/electron-releases#v33.4.1+wvcus",
     "electron-builder": "^24.13.3"
   }
 }
