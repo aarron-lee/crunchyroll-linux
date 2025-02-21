@@ -1,5 +1,7 @@
 # Crunchyroll for Linux
 
+[![](https://img.shields.io/github/downloads/aarron-lee/crunchyroll-linux/total.svg)](https://github.com/aarron-lee/crunchyroll-linux/releases)
+
 ![app.jpg](https://raw.githubusercontent.com/aarron-lee/crunchyroll-tizen/master/app.jpg)
 
 ![layouts.gif](https://raw.githubusercontent.com/aarron-lee/crunchyroll-tizen/master/layouts.gif)
