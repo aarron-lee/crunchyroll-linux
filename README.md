@@ -20,8 +20,6 @@
 
 This is a Linux port of the [Unofficial Tizen Crunchyroll App](https://github.com/jhassan8/crunchyroll-tizen).
 
-**INFO: Application is incomplete, some features are missing that will be added later.**
-
 # Features
 
 Note that this is just a port of the Unofficial Tizen Crunchyroll App, there's currently no plans for to do any additional dev work or add new features. PRs are welcome.
@@ -79,11 +77,11 @@ However, I personally find that I prefer Steam Input for controller management, 
 
 To use Steam Input do the following:
 
-1. first login to the crunchyroll app
+1. login to the crunchyroll app
 2. In the Crunchyroll app settings, disable the game controller support setting
-3. In Steam, make sure Steam Input is enabled for the crunchyroll app.
-4. Either use a community controller profile
-5. Alternatively, map the following keyboard keys for the minimal mappings required for navigation:
+3. If not already added to Steam, add the Crunchyroll app to Steam. Then, in Steam, make sure Steam Input is enabled for the crunchyroll app.
+4. Look for a a community controller profile for the app, but if none is available, you can manually map a layout.
+5. Map the following keyboard keys for the minimal mappings required for navigation:
   - Enter to A (Playstation X)
   - Esc to B (Playstation Circle)
   - D-pad to Keyboard arrow keys
