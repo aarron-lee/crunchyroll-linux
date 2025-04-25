@@ -1,6 +1,6 @@
 {
   "name": "crunchyroll-linux",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Linux Frontend for Crunchyroll",
   "main": "index.js",
   "scripts": {
