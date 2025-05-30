@@ -1,7 +1,7 @@
 {
   "name": "crunchyroll-linux",
   "version": "1.0.5",
-  "description": "Unofficial Linux Frontend for Crunchyroll",
+  "description": "Unofficial Linux HTPC Frontend for Crunchyroll",
   "homepage": "https://github.com/aarron-lee/crunchyroll-linux",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "build": {
     "appId": "com.aarron-lee.unofficial-crunchyroll",
-    "productName": "Unofficial Crunchyroll",
+    "productName": "Crunchyroll",
     "electronDownload": {
       "mirror": "https://github.com/castlabs/electron-releases/releases/download/v"
     },

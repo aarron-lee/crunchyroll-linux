@@ -8,6 +8,7 @@ on:
   push:
     branches:
       - "master"
+      - "dev"
     tags:
       - "v*.*.*"
 
@@ -26,19 +27,19 @@ jobs:
 
       - name: build AppImage
         run: |
-          npm run electron-build
-          chmod +x electron/dist/Crunchyroll_v*_linux.AppImage
+          npm run build
+          chmod +x dist/Crunchyroll_v*_linux.AppImage
         continue-on-error: true
 
       - name: show files
         run: |
-          ls ./electron/dist/Crunchyroll_v*_linux.AppImage
+          ls ./dist/Crunchyroll_v*_linux.AppImage
 
       - name: Publish Artifacts
         uses: actions/upload-artifact@v4
         with:
           name: crunchyroll-linux
-          path: ./electron/dist/Crunchyroll_v*_linux.AppImage
+          path: ./dist/Crunchyroll_v*_linux.AppImage
 
   publish:
     if: startsWith(github.ref, 'refs/tags/v')
