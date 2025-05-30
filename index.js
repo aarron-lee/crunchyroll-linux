@@ -1,4 +1,5 @@
-const { app, components, BrowserWindow, ipcMain } = require("electron");
+const electron = require("electron");
+const { app, BrowserWindow, ipcMain } = electron;
 const path = require("path");
 
 function createWindow() {
@@ -34,7 +35,9 @@ function createWindow() {
 }
 
 app.whenReady().then(async () => {
-  await components.whenReady();
+  if (electron.components) {
+    await components.whenReady();
+  }
   createWindow();
 });
 
