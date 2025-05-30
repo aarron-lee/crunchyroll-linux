@@ -8,5 +8,4 @@
 dist
 electron/static/build/
 node_modules/
-package-lock.json
 !electron/package-lock.json

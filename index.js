@@ -20,7 +20,7 @@ function createWindow() {
 
   win.webContents.setUserAgent(userAgent);
 
-  win.loadFile("./static/build/index.html", {
+  win.loadFile(path.join(__dirname, "./index.html"), {
     userAgent:
       "Mozilla/5.0 (SMART-TV; LINUX; Tizen 5.0) AppleWebKit/537.36 (KHTML, like Gecko) Version/5.0 TV Safari/537.36",
   });

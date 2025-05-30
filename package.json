@@ -1,21 +1,48 @@
 {
   "name": "crunchyroll-linux",
   "version": "1.0.5",
-  "description": "Linux Frontend for Crunchyroll",
+  "description": "Unofficial Linux Frontend for Crunchyroll",
+  "homepage": "https://github.com/aarron-lee/crunchyroll-linux",
   "main": "index.js",
   "scripts": {
-    "start": "sh ./electron_build.sh && cd electron && npm install && npm run start",
-    "electron-build": "sh ./electron_build.sh && cd electron && npm install && npm run build"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-builder"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aarron-lee/crunchyroll-linux.git"
+  "build": {
+    "appId": "com.aarron-lee.unofficial-crunchyroll",
+    "productName": "Unofficial Crunchyroll",
+    "electronDownload": {
+      "mirror": "https://github.com/castlabs/electron-releases/releases/download/v"
+    },
+    "files": [
+      "index.js",
+      "index.html",
+      "preload.js",
+      "package.json",
+      "img/*",
+      "css/*",
+      "js/*",
+      "server/**/*",
+      "css"
+    ],
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "icon": "img/icon/crunchyroll.png",
+      "artifactName": "${productName}_v${version}_linux.${ext}",
+      "category": "Video"
+    }
   },
+  "devDependencies": {
+    "electron": "github:castlabs/electron-releases#v36.3.1+wvcus",
+    "electron-builder": "^26.0.12"
+  },
+  "keywords": [],
   "author": "aarron-lee",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/aarron-lee/crunchyroll-linux/issues"
-  },
-  "homepage": "https://github.com/aarron-lee/crunchyroll-linux",
-  "devDependencies": {}
+  }
 }
