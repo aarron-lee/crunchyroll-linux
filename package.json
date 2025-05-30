@@ -7,7 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "build": "electron-builder"
+    "build": "electron-builder",
+    "flatpak:build-unpacked": "electron-builder --linux --dir"
   },
   "build": {
     "appId": "com.aarron-lee.unofficial-crunchyroll",
