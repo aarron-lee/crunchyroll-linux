@@ -36,7 +36,7 @@ function createWindow() {
 
 app.whenReady().then(async () => {
   if (electron.components) {
-    await components.whenReady();
+    await electron.components.whenReady();
   }
   createWindow();
 });

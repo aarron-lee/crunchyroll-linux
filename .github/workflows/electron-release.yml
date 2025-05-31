@@ -20,44 +20,38 @@ jobs:
     steps:
       - name: set git global safe directory
         run: |
-          pacman -Syu git npm --noconfirm
+          pacman -Syu git npm tree zip unzip --noconfirm
           git config --global --add safe.directory $(realpath .)
 
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Setup latest Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: latest
-
-      - name: Setup PNPM@10
-        uses: pnpm/action-setup@v4
-        with:
-          version: "10.11.0"
-
-      - name: Build Appimage
+      - name: build AppImage
         run: |
-          pnpm i
-          pnpm run build
+          npm install
+          npm run build
           chmod +x dist/Crunchyroll_v*_linux.AppImage
-          mv dist/Crunchyroll_v*_linux.AppImage ./
-          rm -rf dist
-          pnpm run flatpak:build-unpacked
-          zip -r crunchyroll_unpacked.zip ./dist
+        continue-on-error: true
+
+      - name: build zip
+        run: |
+          npm install
+          npm run flatpak:build-unpacked
+          zip -r dist/crunchyroll_unpacked.zip dist/linux-unpacked
         continue-on-error: true
 
       - name: show files
         run: |
-          ls ./Crunchyroll_v*_linux.AppImage
-          ls ./crunchyroll_unpacked.zip
+          ls ./dist/Crunchyroll_v*_linux.AppImage
+          ls ./dist/crunchyroll_unpacked.zip
 
       - name: Publish Artifacts
         uses: actions/upload-artifact@v4
         with:
           name: crunchyroll-linux
           path: |
-            ./Crunchyroll_v*_linux.AppImage
-            ./crunchyroll_unpacked.zip
+            ./dist/Crunchyroll_v*_linux.AppImage
+            ./dist/crunchyroll_unpacked.zip
 
   publish:
     if: startsWith(github.ref, 'refs/tags/v')
