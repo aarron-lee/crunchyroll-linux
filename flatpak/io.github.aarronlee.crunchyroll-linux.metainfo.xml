@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<component type="desktop-application">
+  <!--Created with jdAppStreamEdit 9.2-->
+  <id>io.github.aarronlee.crunchyroll-linux</id>
+  <name>Crunchyroll HTPC (Unofficial)</name>
+  <summary>Unofficial Crunchyroll HTPC app</summary>
+  <developer id="io.github.aarronlee">
+    <name>aarron-lee</name>
+  </developer>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>Apache-2.0</project_license>
+  <update_contact>370c943f05559745c133b757e3592f643976292a</update_contact>
+  <description>
+    <p>Crunchyroll HTPC is a port of the unofficial Crunchyroll Tizen Smart TV app</p>
+  </description>
+  <screenshots>
+    <screenshot>
+      <caption>App</caption>
+      <image type="source">https://raw.githubusercontent.com/aarron-lee/crunchyroll-linux/refs/heads/main/flatpak/app.png</image>
+    </screenshot>
+  </screenshots>
+  <releases>
+    <release version="1.0.6" date="2025-04-29" type="stable">
+      <description>
+        <p>v1.0.6</p>
+        <ul>
+          <li>Fixed controller input being taken even when app is unfocused (#10)</li>
+          <li>Disabled alt menu bar</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.0.5" date="2025-04-27" type="stable">
+      <description>
+        <p>v1.0.5</p>
+        <ul>
+          <li>Added full controller parity with console version of YouTube</li>
+          <li>Fixed controllers sometimes not working in the Flatpak</li>
+          <li>Updated Flatpak description to more accurately describe the project</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <url type="homepage">https://github.com/aarron-lee/crunchyroll-linux</url>
+  <url type="bugtracker">https://github.com/aarron-lee/crunchyroll-linux/issues</url>
+  <url type="vcs-browser">https://github.com/aarron-lee/crunchyroll-linux</url>
+  <url type="contribute">https://github.com/aarron-lee/crunchyroll-linux</url>
+  <requires>
+    <internet>always</internet>
+  </requires>
+  <recommends>
+    <control>gamepad</control>
+    <control>tv-remote</control>
+    <control>keyboard</control>
+  </recommends>
+  <supports>
+    <control>keyboard</control>
+  </supports>
+  <content_rating type="oars-1.1"/>
+  <launchable type="desktop-id">io.github.aarronlee.crunchyroll-linux.desktop</launchable>
+  <keywords>
+    <keyword>crunchyroll</keyword>
+    <keyword>cr</keyword>
+  </keywords>
+</component>

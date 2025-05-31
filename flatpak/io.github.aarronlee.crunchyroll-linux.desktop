@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Crunchyroll HTPC (Unofficial)
+Exec=startcrunchyroll %U
+Terminal=false
+Type=Application
+Icon=io.github.aarronlee.crunchyroll-linux
+StartupWMClass=Crunchyroll
+GenericName=Crunchyroll HTPC
+Categories=AudioVideo;
+Keywords=Crunchyroll;YT;
+Comment=Unofficial Crunchyroll HTPC app

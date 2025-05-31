@@ -9,3 +9,4 @@ dist
 electron/static/build/
 node_modules/
 !electron/package-lock.json
+flatpak/venv

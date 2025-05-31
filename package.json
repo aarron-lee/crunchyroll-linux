@@ -11,7 +11,7 @@
     "flatpak:build-unpacked": "electron-builder --linux --dir"
   },
   "build": {
-    "appId": "io.github.aarron-lee.crunchyroll-linux",
+    "appId": "io.github.aarronlee.crunchyroll-linux",
     "productName": "Crunchyroll",
     "electronDownload": {
       "mirror": "https://github.com/castlabs/electron-releases/releases/download/v"
