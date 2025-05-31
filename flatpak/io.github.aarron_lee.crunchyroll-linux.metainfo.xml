@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <component type="desktop-application">
   <!--Created with jdAppStreamEdit 9.2-->
-  <id>io.github.aarronlee.crunchyroll-linux</id>
+  <id>io.github.aarron_lee.crunchyroll-linux</id>
   <name>Crunchyroll HTPC (Unofficial)</name>
   <summary>Unofficial Crunchyroll HTPC app</summary>
-  <developer id="io.github.aarronlee">
+  <developer id="io.github.aarron_lee">
     <name>aarron-lee</name>
   </developer>
   <metadata_license>CC0-1.0</metadata_license>
@@ -20,24 +20,7 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="1.0.6" date="2025-04-29" type="stable">
-      <description>
-        <p>v1.0.6</p>
-        <ul>
-          <li>Fixed controller input being taken even when app is unfocused (#10)</li>
-          <li>Disabled alt menu bar</li>
-        </ul>
-      </description>
-    </release>
-    <release version="1.0.5" date="2025-04-27" type="stable">
-      <description>
-        <p>v1.0.5</p>
-        <ul>
-          <li>Added full controller parity with console version of YouTube</li>
-          <li>Fixed controllers sometimes not working in the Flatpak</li>
-          <li>Updated Flatpak description to more accurately describe the project</li>
-        </ul>
-      </description>
+    <release version="1.0.6" date="2025-05-30" type="stable">
     </release>
   </releases>
   <url type="homepage">https://github.com/aarron-lee/crunchyroll-linux</url>
@@ -56,7 +39,7 @@
     <control>keyboard</control>
   </supports>
   <content_rating type="oars-1.1"/>
-  <launchable type="desktop-id">io.github.aarronlee.crunchyroll-linux.desktop</launchable>
+  <launchable type="desktop-id">io.github.aarron_lee.crunchyroll-linux.desktop</launchable>
   <keywords>
     <keyword>crunchyroll</keyword>
     <keyword>cr</keyword>
