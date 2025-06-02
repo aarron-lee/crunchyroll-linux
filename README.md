@@ -49,6 +49,12 @@ Download the latest AppImage from [releases](https://github.com/aarron-lee/crunc
 
 Install it with an AppImage manager, my recommendation would be [GearLever](https://flathub.org/apps/it.mijorus.gearlever), but other alternatives like AppImageLauncher also works
 
+## Flatpak install
+
+flatpak currently requires a manual install, a flathub submission is being investigated.
+
+See instructions here if you want to manually install the flatpak: https://github.com/aarron-lee/flathub/tree/crunchyroll-linux 
+
 ## Quick Install
 
 run the following script in terminal:
