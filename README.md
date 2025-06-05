@@ -53,14 +53,14 @@ Install it with an AppImage manager, my recommendation would be [GearLever](http
 
 flatpak currently requires a manual install, a flathub submission is being investigated.
 
-See instructions here if you want to manually install the flatpak: https://github.com/aarron-lee/flathub/tree/crunchyroll-linux 
+See instructions here if you want to manually install the flatpak: https://github.com/aarron-lee/flathub/tree/crunchyroll-linux
 
 ## Quick Install
 
 run the following script in terminal:
 
 ```
-curl -L https://github.com/aarron-lee/crunchyroll-linux/raw/master/install.sh | sh
+curl -H 'Cache-Control: no-cache, no-store' -L https://github.com/aarron-lee/crunchyroll-linux/raw/master/install.sh | sh
 ```
 
 ## Steam Deck / Bazzite / ChimeraOS Installation
@@ -88,9 +88,10 @@ To use Steam Input do the following:
 3. If not already added to Steam, add the Crunchyroll app to Steam. Then, in Steam, make sure Steam Input is enabled for the crunchyroll app.
 4. Look for a a community controller profile for the app, but if none is available, you can manually map a layout.
 5. Map the following keyboard keys for the minimal mappings required for navigation:
-  - Enter to A (Playstation X)
-  - Esc to B (Playstation Circle)
-  - D-pad to Keyboard arrow keys
+
+- Enter to A (Playstation X)
+- Esc to B (Playstation Circle)
+- D-pad to Keyboard arrow keys
 
 # Development
 

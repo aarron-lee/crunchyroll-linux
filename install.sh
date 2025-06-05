@@ -8,8 +8,9 @@ if [ "$EUID" -eq 0 ]
   exit
 fi
 
-flatpak install it.mijorus.gearlever --system -y
+flatpak install -v --system -y --noninteractive it.mijorus.gearlever >/dev/null
 
+echo "gearlever install complete"
 
 echo "Downloading $APP AppImage"
 
