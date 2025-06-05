@@ -8,27 +8,7 @@ if [ "$EUID" -eq 0 ]
   exit
 fi
 
-if grep -q 'it.mijorus.gearlever' <<< $(flatpak list); then
-    echo "GearLever installed, $APP install will proceed"
-
-else
-    read -p "This $APP install script requires GearLever. Do you want to install GearLever? (y/n): " yn
-
-    case $yn in
-        [Yy]* )
-            echo "Installing GearLever..."
-            flatpak install it.mijorus.gearlever --system -y
-            ;;
-        [Nn]* )
-            echo "GearLever Installation aborted."
-            exit
-            ;;
-        * )
-            echo "Please answer yes or no."
-            exit
-            ;;
-    esac
-fi
+flatpak install it.mijorus.gearlever --system -y
 
 
 echo "Downloading $APP AppImage"
