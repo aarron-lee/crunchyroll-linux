@@ -49,23 +49,21 @@ Download the latest AppImage from [releases](https://github.com/aarron-lee/crunc
 
 Install it with an AppImage manager, my recommendation would be [GearLever](https://flathub.org/apps/it.mijorus.gearlever), but other alternatives like AppImageLauncher also works
 
-## Flatpak install
-
-flatpak currently requires a manual install, a flathub submission is being investigated.
-
-See instructions here if you want to manually install the flatpak: https://github.com/aarron-lee/flathub/tree/crunchyroll-linux
-
 ## Quick Install
 
 run the following script in terminal:
 
 ```
-curl -H 'Cache-Control: no-cache, no-store' -L https://github.com/aarron-lee/crunchyroll-linux/raw/master/install.sh | sh
+curl -L https://github.com/aarron-lee/crunchyroll-linux/raw/master/install.sh | sh
 ```
+
+When GearLever opens up, make sure to Unlock + move the app to the app menu
 
 ## Steam Deck / Bazzite / ChimeraOS Installation
 
-Follow the regular install instructions, but afterwards also add it to Steam as a non-Steam game.
+Follow the [quick install](#quick-install) instructions, and afterwards also add it to Steam as a non-Steam game.
+
+**IMPORTANT** set the Crunchyroll resolution to 1080p in the Steam game settings, otherwise it won't scale well.
 
 **The app should have basic controller support working, but if you prefer to use Steam Input to manage navigation, make sure to disable `Game Controller Support` in the Crunchyroll app's settings, and set a controller config in Steam Input.**
 
@@ -74,6 +72,12 @@ Then, in game mode, make sure to enable a Steam input community controller layou
 I've tested the `Streaming Controls` Steam input community layout by Bleiodes, which works fairly well.
 
 Also, in the Steam Game settings for the app, set the resolution as 1080p. The App was not designed for higher resolutions, you may see visual bugs at higher than 1080p resolutions.
+
+## Flatpak install (experimental)
+
+flatpak currently requires a manual install, a flathub submission is being investigated.
+
+See instructions here if you want to manually install the flatpak: https://github.com/aarron-lee/flathub/tree/crunchyroll-linux
 
 # Controller Support
 
