@@ -3,9 +3,18 @@ const { app, BrowserWindow, ipcMain } = electron;
 const path = require("path");
 
 function createWindow() {
+  let fullscreen = false;
+  if (process.env.FULL_SCREEN === "1") {
+    fullscreen = true;
+  }
+
   const win = new BrowserWindow({
-    fullscreen: true,
+    fullscreen,
     autoHideMenuBar: true,
+    width: 1920,
+    height: 1080,
+    maxHeight: 1080,
+    maxWidth: 1920,
     webPreferences: {
       nodeIntegration: false,
       webSecurity: false,
