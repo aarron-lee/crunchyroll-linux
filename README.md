@@ -14,6 +14,7 @@
 - [Steam Deck / Bazzite / ChimeraOS Install](#steam-deck--bazzite--chimeraos-installation)
 - [Development](#development)
 - [Controller Support](#controller-support)
+- [FAQ](#FAQ)
 - [Attribution](#attribution)
 
 # Description:
@@ -110,6 +111,12 @@ There is no hot-reloading, so you must re-run the command after code changes are
 run `npm run electron-build`
 
 This will generate an AppImage in `electron/dist`
+
+## FAQ
+
+Q: How do I enable full screen while in desktop?
+
+A: add the env var `FULL_SCREEN=1` to the application
 
 ## Attribution
 
