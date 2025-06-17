@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
 <component type="desktop-application">
-  <!--Created with jdAppStreamEdit 9.2-->
   <id>io.github.aarron_lee.crunchyroll-linux</id>
   <name>Crunchyroll HTPC (Unofficial)</name>
   <summary>Unofficial Crunchyroll HTPC app</summary>
@@ -9,9 +8,9 @@
   </developer>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>Apache-2.0</project_license>
-  <update_contact>370c943f05559745c133b757e3592f643976292a</update_contact>
   <description>
     <p>Crunchyroll HTPC is a port of the unofficial Crunchyroll Tizen Smart TV app</p>
+    <p>Icon Attribution: <a href="https://www.flaticon.com/free-icons/crunchyroll" title="crunchyroll icons">Crunchyroll icons created by kawalanicon - Flaticon</a></p>
   </description>
   <screenshots>
     <screenshot>
@@ -20,7 +19,7 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release version="1.0.6" date="2025-05-30" type="stable">
+    <release version="1.0.7" date="2025-06-07" type="stable">
     </release>
   </releases>
   <url type="homepage">https://github.com/aarron-lee/crunchyroll-linux</url>
