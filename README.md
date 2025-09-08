@@ -26,6 +26,7 @@ This is a Linux port of the [Unofficial Tizen Crunchyroll App](https://github.co
 Note that this is just a port of the Unofficial Tizen Crunchyroll App, there's currently no plans for to do any additional dev work or add new features. PRs are welcome.
 
 - [x] Auth workflow
+- [x] Profiles screen
 - [x] Home screen
 - [x] Profiles
 - [x] Details screen

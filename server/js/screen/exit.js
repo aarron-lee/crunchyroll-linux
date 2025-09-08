@@ -13,14 +13,14 @@ window.exit = {
       '<div class="content">' +
       '  <div class="window">' +
       `    <div class="text">${translate.go(
-        `exit.message${exit.logout ? "_logout" : ""}`
+        `exit.message${exit.logout ? "_logout" : ""}`,
       )}` +
       '    <div class="buttons">' +
       `      <div class="button" id="exit-screen-yes">${translate.go(
-        "exit.yes"
+        "exit.yes",
       )}</div>` +
       `      <div class="button" id="exit-screen-no">${translate.go(
-        "exit.no"
+        "exit.no",
       )}</div>` +
       "    </div>" +
       "  </div>" +
@@ -61,10 +61,10 @@ window.exit = {
   move: function (selected) {
     exit.selected = selected;
     document.getElementById(
-      exit.id + "-" + (selected ? "yes" : "no")
+      exit.id + "-" + (selected ? "yes" : "no"),
     ).className = "button selected";
     document.getElementById(
-      exit.id + "-" + (!selected ? "yes" : "no")
+      exit.id + "-" + (!selected ? "yes" : "no"),
     ).className = "button";
   },
 

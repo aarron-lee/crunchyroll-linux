@@ -76,7 +76,7 @@ window.session = {
       },
       success: function (response) {
         session.storage.expires_in = new Date().setSeconds(
-          new Date().getSeconds() + response.expires_in
+          new Date().getSeconds() + response.expires_in,
         );
         session.storage.id = response.account_id;
         session.storage.account.username = username;
@@ -104,7 +104,7 @@ window.session = {
         },
         success: function (response) {
           session.storage.expires_in = new Date().setSeconds(
-            new Date().getSeconds() + response.expires_in
+            new Date().getSeconds() + response.expires_in,
           );
           session.storage.id = response.account_id;
           session.storage.country = response.country;
@@ -134,7 +134,7 @@ window.session = {
           session.storage.cookies.signature = response.cms.signature;
           session.storage.cookies.key_pair_id = response.cms.key_pair_id;
           session.storage.cookies.expires = new Date(
-            response.cms.expires
+            response.cms.expires,
           ).getTime();
 
           callback.success(session.update());
@@ -178,7 +178,7 @@ window.session = {
           session.storage.profiles = response.profiles;
           session.update();
           callback && callback.success();
-        }
+        },
       });
 
       session.cookies({
@@ -195,7 +195,7 @@ window.session = {
       {
         success: (json) => {
           session.storage.expires_in = new Date().setSeconds(
-            new Date().getSeconds() + json.expires_in
+            new Date().getSeconds() + json.expires_in,
           );
           session.storage.id = json.account_id;
           session.storage.profile_id = json.profile_id;
@@ -229,7 +229,7 @@ window.session = {
         },
         error: callback.error,
       },
-      profile_id
+      profile_id,
     );
   },
 
@@ -257,7 +257,9 @@ window.session = {
     var profiles = session.storage.profiles;
 
     for (var i = 0; i < profiles.length; i++) {
-      var { is_selected, username, profile_name } = profiles[i];
+      var is_selected = profiles[i].is_selected;
+      var profile_name = profiles[i].profile_name;
+      var username = profiles[i].username;
 
       if (is_selected) {
         return profile_name ? profile_name : username;

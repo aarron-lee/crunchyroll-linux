@@ -107,16 +107,6 @@ window.service = {
     });
   },
 
-  //   {
-  //     "access_token": "",
-  //     "refresh_token": "uuid",
-  //     "expires_in": 300,
-  //     "token_type": "Bearer",
-  //     "scope": "account content mp:limited offline_access reviews talkbox",
-  //     "country": "US",
-  //     "account_id": "uuid",
-  //     "profile_id": "uuid"
-  //   }
   switchProfile: function (request, profile_id) {
     return session.refresh({
       success: function (storage) {
@@ -173,7 +163,7 @@ window.service = {
           `${service.api.url}/content/v2/discover/${storage.id}/home_feed?start=0&n=100&preferred_audio_language=${storage.account.audio}&locale=${storage.language}`,
           {
             headers: headers,
-          }
+          },
         )
           .then((response) => response.json())
           .then((json) => request.success(json))
@@ -193,7 +183,7 @@ window.service = {
           `${service.api.url}/content/v2/discover/up_next/${request.data.ids}?locale=${storage.language}&preferred_audio_language=${storage.account.audio}`,
           {
             headers: headers,
-          }
+          },
         )
           .then((response) => response.json())
           .then((json) => request.success(json))
@@ -213,7 +203,7 @@ window.service = {
           `${service.api.url}/content/v2/${storage.id}/playheads?content_ids=${request.data.ids}&preferred_audio_language=${storage.account.audio}&locale=${storage.language}`,
           {
             headers: headers,
-          }
+          },
         )
           .then((response) => response.json())
           .then((json) => request.success(json))
@@ -232,7 +222,7 @@ window.service = {
           `${service.api.url}/cms/v2${storage.cookies.bucket}/seasons?series_id=${request.data.id}&preferred_audio_language=${storage.account.audio}&locale=${storage.language}&Signature=${storage.cookies.signature}&Policy=${storage.cookies.policy}&Key-Pair-Id=${storage.cookies.key_pair_id}`,
           {
             headers: headers,
-          }
+          },
         )
           .then((response) => response.json())
           .then((json) => request.success(json))
@@ -254,7 +244,7 @@ window.service = {
           `${service.api.url}/cms/v2${storage.cookies.bucket}/episodes?season_id=${request.data.id}&preferred_audio_language=${storage.account.audio}&locale=${storage.language}&Signature=${storage.cookies.signature}&Policy=${storage.cookies.policy}&Key-Pair-Id=${storage.cookies.key_pair_id}`,
           {
             headers: headers,
-          }
+          },
         )
           .then((response) => response.json())
           .then((json) => request.success(json))
@@ -272,7 +262,7 @@ window.service = {
         var headers = new Headers();
         headers.append("Authorization", `Bearer ${storage.access_token}`);
         headers.append("Content-Type", "application/x-www-form-urlencoded");
-        fetch(`${service.api.drm}/v1/${request.data.id}/web/firefox/play`, {
+        fetch(`${service.api.drm}/v1/${request.data.id}/tv/samsung/play`, {
           headers: headers,
         })
           .then((response) => response.json())
@@ -292,7 +282,7 @@ window.service = {
           `${service.api.url}/cms/v2${storage.cookies.bucket}/videos/${request.data.id}/streams?Signature=${storage.cookies.signature}&Policy=${storage.cookies.policy}&Key-Pair-Id=${storage.cookies.key_pair_id}`,
           {
             headers: headers,
-          }
+          },
         )
           .then((response) => response.json())
           .then((json) => request.success(json))
@@ -314,7 +304,7 @@ window.service = {
           `${service.api.url}/content/v2/discover/search?q=${request.data.query}&type=series,movie_listing&n=100&locale=${storage.language}`,
           {
             headers: headers,
-          }
+          },
         )
           .then((response) => response.json())
           .then((json) => request.success(json))
@@ -333,7 +323,7 @@ window.service = {
           `${service.api.url}/content/v2/${storage.id}/watch-history?page_size=100&preferred_audio_language=${storage.account.audio}&locale=${storage.language}`,
           {
             headers: headers,
-          }
+          },
         )
           .then((response) => response.json())
           .then((json) => request.success(json))
@@ -354,7 +344,7 @@ window.service = {
             method: "POST",
             headers: headers,
             body: JSON.stringify(request.data),
-          }
+          },
         )
           .then((response) => response.text())
           .then((json) => request.success(json))
@@ -369,7 +359,7 @@ window.service = {
         request.data.type === "subtitle"
           ? "timed_text_languages.json"
           : "audio_languages.json"
-      }`
+      }`,
     )
       .then((response) => response.json())
       .then((json) => request.success(json))
@@ -377,7 +367,9 @@ window.service = {
   },
 
   intro: function (request) {
-    fetch(`${service.api.static}/datalab-intro-v2/${request.data.id}.json`)
+    fetch(
+      `${service.api.static}/skip-events/production/${request.data.id}.json`,
+    )
       .then((response) => response.json())
       .then((json) => request.success(json))
       .catch((error) => request.error(error));
@@ -393,7 +385,7 @@ window.service = {
           `${service.api.url}/content/v1/tenant_categories?include_subcategories=true&locale=${storage.language}`,
           {
             headers: headers,
-          }
+          },
         )
           .then((response) => response.json())
           .then((json) => request.success(json))
@@ -412,7 +404,7 @@ window.service = {
           `${service.api.url}/content/v2/${storage.id}/custom-lists?preferred_audio_language=${storage.account.audio}&locale=${storage.language}`,
           {
             headers: headers,
-          }
+          },
         )
           .then((response) => response.json())
           .then((json) => request.success(json))
@@ -431,7 +423,7 @@ window.service = {
           `${service.api.url}/content/v2/${storage.id}/custom-lists/${request.data}?ratings=true&preferred_audio_language=${storage.account.audio}&locale=${storage.language}`,
           {
             headers: headers,
-          }
+          },
         )
           .then((response) => response.json())
           .then((json) => request.success(json))
@@ -450,7 +442,7 @@ window.service = {
           `${service.api.url}/content/v2/discover/${storage.id}/watchlist?order=desc&n=1000&preferred_audio_language=${storage.account.audio}&locale=${storage.language}`,
           {
             headers: headers,
-          }
+          },
         )
           .then((response) => response.json())
           .then((json) => request.success(json))
@@ -469,7 +461,7 @@ window.service = {
           `${service.api.url}/content/v2/${storage.id}/watchlist?content_ids=${request.data}&preferred_audio_language=${storage.account.audio}&locale=${storage.language}`,
           {
             headers: headers,
-          }
+          },
         )
           .then((response) => response.json())
           .then((json) => request.success(json))
@@ -490,7 +482,7 @@ window.service = {
             method: "POST",
             headers: headers,
             body: JSON.stringify(request.data),
-          }
+          },
         )
           .then((response) => response.text())
           .then((json) => request.success(json))
@@ -510,7 +502,7 @@ window.service = {
           {
             method: "DELETE",
             headers: headers,
-          }
+          },
         )
           .then((response) => response.text())
           .then((json) => request.success(json))
