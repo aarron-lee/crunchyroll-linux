@@ -505,8 +505,8 @@ window.languages = {
         info: "Plus d'informations",
       },
       details: {
-        play: "Lire : S{saison} E{episode}",
-        continue: "Continuer : S{saison} E{episode}",
+        play: "Lire : S{season} E{episode}",
+        continue: "Continuer : S{season} E{episode}",
         add: "Ajouter aux Favoris",
         remove: "Retirer des Favoris",
         episodes: "Épisodes",
