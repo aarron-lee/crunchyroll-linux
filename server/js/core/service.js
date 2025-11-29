@@ -1,6 +1,6 @@
 window.service = {
   api: {
-    url: "https://www.crunchyroll.com",
+    url: "https://beta-api.crunchyroll.com",
     static: "https://static.crunchyroll.com",
     drm: "https://cr-play-service.prd.crunchyrollsvc.com",
     //url: "http://api.crunchyroll.local",
