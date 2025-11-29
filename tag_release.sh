@@ -14,7 +14,9 @@ sed -i "s/version\": \"[0-9]\+\.[0-9]\+\.[0-9]\+\"/version\": \"$NEW_TAG\"/" ./p
 git add ./package.json
 
 # update package-lock.json
-npm install
+npm
+
+git add ./package-lock.json
 
 git commit -m "Release version $NEW_TAG"
 
