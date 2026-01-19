@@ -117,7 +117,7 @@ This will generate an AppImage in `electron/dist`
 
 Q: How do I enable full screen while in desktop?
 
-A: add the env var `FULL_SCREEN=1` to the application
+A: you can press the `f11` key to fullscreen the app. alternatively, add the env var `FULL_SCREEN=1` to the application
 
 ## Attribution
 
