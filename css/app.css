@@ -18,6 +18,7 @@
 }
 
 body {
+  cursor: none;
   font-family: "Lato";
   width: 100vw;
   height: 100vh;
