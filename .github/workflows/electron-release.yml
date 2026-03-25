@@ -20,7 +20,7 @@ jobs:
     steps:
       - name: set git global safe directory
         run: |
-          pacman -Syu git npm tree zip unzip --noconfirm
+          pacman -Syu git pnpm tree zip unzip --noconfirm
           git config --global --add safe.directory $(realpath .)
 
       - name: Checkout repository
@@ -28,15 +28,15 @@ jobs:
 
       - name: build AppImage
         run: |
-          npm install
-          npm run build
+          pnpm install
+          pnpm run build
           chmod +x dist/Crunchyroll_v*_linux.AppImage
         continue-on-error: true
 
       - name: build zip
         run: |
-          npm install
-          npm run flatpak:build-unpacked
+          pnpm install
+          pnpm run flatpak:build-unpacked
           zip -r dist/crunchyroll_unpacked.zip dist/linux-unpacked
         continue-on-error: true
 
