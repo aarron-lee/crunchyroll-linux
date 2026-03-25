@@ -15,6 +15,7 @@
 - [Development](#development)
 - [Controller Support](#controller-support)
 - [FAQ](#FAQ)
+- [Troubleshooting](#troubleshooting)
 - [Attribution](#attribution)
 
 # Description:
@@ -118,6 +119,16 @@ This will generate an AppImage in `electron/dist`
 Q: How do I enable full screen while in desktop?
 
 A: you can press the `f11` key to fullscreen the app. alternatively, add the env var `FULL_SCREEN=1` to the application
+
+## Troubleshooting
+
+If videos fail to load, try deleting your config directory and restarting the app.
+
+To delete the config directory, run the following in terminal:
+
+```bash
+rm -rf $HOME/.config/crunchyroll-linux/
+```
 
 ## Attribution
 
