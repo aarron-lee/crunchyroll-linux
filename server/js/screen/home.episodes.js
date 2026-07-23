@@ -36,9 +36,7 @@ window.home_episodes = {
         var seasons_html = "";
         home_episodes.data.seasons.forEach((season, index) => {
           seasons_html += `
-          <div class="season${index === 0 ? " selected active" : ""}">${
-            season.number
-          }. ${season.title}</div>`;
+          <div class="season${index === 0 ? " selected active" : ""}">${season.title}</div>`;
         });
         $(".seasons #seasons-list-offset").eq(0).html(seasons_html);
         home_episodes.load(home_episodes.data.seasons[0]);
@@ -56,7 +54,7 @@ window.home_episodes = {
   },
 
   load: function (season) {
-    $(".episodes .title")[0].innerText = `${season.number}. ${season.title}`;
+    $(".episodes .title")[0].innerText = `${season.title}`;
     $(".episodes .episodes-list")[0].slick &&
       $(".episodes .episodes-list")[0].slick.destroy();
     $(".episodes .episodes-list")[0].innerHTML = "";
