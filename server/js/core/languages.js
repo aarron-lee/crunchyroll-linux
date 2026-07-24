@@ -22,7 +22,6 @@ window.languages = {
       history: "इतिहास",
       browse: "ब्राउज़ करें",
       settings: "सेटिंग्स",
-      logout: "लॉगआउट",
     },
     home: {
       banner: {
@@ -68,6 +67,7 @@ window.languages = {
         video_quality: "वीडियो गुणवत्ता",
         mature: "परिपक्व सामग्री",
         about: "के बारे में",
+        logout: "लॉगआउट",
       },
     },
     lists: {
@@ -102,7 +102,6 @@ window.languages = {
       history: "التاريخ",
       browse: "تصفح",
       settings: "الإعدادات",
-      logout: "تسجيل الخروج",
     },
     home: {
       banner: {
@@ -147,6 +146,7 @@ window.languages = {
         video_quality: "جودة الفيديو",
         mature: "محتوى للبالغين",
         about: "حول",
+        logout: "تسجيل الخروج",
       },
     },
     lists: {
@@ -181,7 +181,6 @@ window.languages = {
       history: "Historial",
       browse: "Navega",
       settings: "Configuració",
-      logout: "Tanca la sessió",
     },
     home: {
       banner: {
@@ -226,6 +225,7 @@ window.languages = {
         video_quality: "Qualitat del vídeo",
         mature: "Contingut per a adults",
         about: "Sobre",
+        logout: "Tanca la sessió",
       },
     },
     lists: {
@@ -260,7 +260,6 @@ window.languages = {
       history: "Verlauf",
       browse: "Durchsuchen",
       settings: "Einstellungen",
-      logout: "Abmelden",
     },
     home: {
       banner: {
@@ -305,6 +304,7 @@ window.languages = {
         video_quality: "Videoqualität",
         mature: "Erwachseneninhalt",
         about: "Über",
+        logout: "Abmelden",
       },
     },
     lists: {
@@ -339,7 +339,6 @@ window.languages = {
       profiles: "Profiles",
       controller: "Game Controller",
       settings: "Settings",
-      logout: "Logout",
     },
     home: {
       banner: {
@@ -384,6 +383,7 @@ window.languages = {
         video_quality: "Video Quality",
         mature: "Mature Content",
         about: "About",
+        logout: "Logout",
       },
     },
     lists: {
@@ -418,7 +418,6 @@ window.languages = {
       history: "Historial",
       browse: "Explorar",
       settings: "Configuración",
-      logout: "Cerrar sesión",
     },
     home: {
       banner: {
@@ -463,6 +462,7 @@ window.languages = {
         video_quality: "Calidad del video",
         mature: "Contenido para adultos",
         about: "Acerca de",
+        logout: "Cerrar sesión",
       },
     },
     lists: {
@@ -497,7 +497,6 @@ window.languages = {
       history: "Historique",
       browse: "Explorer",
       settings: "Paramètres",
-      logout: "Déconnexion",
     },
     home: {
       banner: {
@@ -542,6 +541,7 @@ window.languages = {
         video_quality: "Qualité de la vidéo",
         mature: "Contenu pour adultes",
         about: "À propos de",
+        logout: "Déconnexion",
       },
     },
     lists: {
@@ -576,7 +576,6 @@ window.languages = {
       history: "Riwayat",
       browse: "Jelajah",
       settings: "Pengaturan",
-      logout: "Keluar",
     },
     home: {
       banner: {
@@ -621,6 +620,7 @@ window.languages = {
         video_quality: "Kualitas Video",
         mature: "Konten Dewasa",
         about: "Tentang",
+        logout: "Keluar",
       },
     },
     lists: {
@@ -655,7 +655,6 @@ window.languages = {
       history: "Cronologia",
       browse: "Esplora",
       settings: "Impostazioni",
-      logout: "Esci",
     },
     home: {
       banner: {
@@ -700,6 +699,7 @@ window.languages = {
         video_quality: "Qualità del video",
         mature: "Contenuti per adulti",
         about: "Informazioni",
+        logout: "Esci",
       },
     },
     lists: {
@@ -734,7 +734,6 @@ window.languages = {
       history: "Sejarah",
       browse: "Jelajah",
       settings: "Tetapan",
-      logout: "Log Keluar",
     },
     home: {
       banner: {
@@ -779,6 +778,7 @@ window.languages = {
         video_quality: "Kualiti Video",
         mature: "Kandungan Dewasa",
         about: "Mengenai",
+        logout: "Log Keluar",
       },
     },
     lists: {
@@ -813,7 +813,6 @@ window.languages = {
       history: "Historia",
       browse: "Przeglądaj",
       settings: "Ustawienia",
-      logout: "Wyloguj",
     },
     home: {
       banner: {
@@ -858,6 +857,7 @@ window.languages = {
         video_quality: "Jakość wideo",
         mature: "Zawartość dla dorosłych",
         about: "O nas",
+        logout: "Wyloguj",
       },
     },
     lists: {
@@ -892,7 +892,6 @@ window.languages = {
       history: "Histórico",
       browse: "Navegar",
       settings: "Configurações",
-      logout: "Sair",
     },
     home: {
       banner: {
@@ -937,6 +936,7 @@ window.languages = {
         video_quality: "Qualidade do vídeo",
         mature: "Conteúdo adulto",
         about: "Sobre",
+        logout: "Sair",
       },
     },
     lists: {
@@ -971,7 +971,6 @@ window.languages = {
       history: "История",
       browse: "Просмотр",
       settings: "Настройки",
-      logout: "Выйти",
     },
     home: {
       banner: {
@@ -1016,6 +1015,7 @@ window.languages = {
         video_quality: "Качество видео",
         mature: "Контент для взрослых",
         about: "О приложении",
+        logout: "Выйти",
       },
     },
     lists: {
@@ -1050,7 +1050,6 @@ window.languages = {
       history: "ประวัติ",
       browse: "เรียกดู",
       settings: "ตั้งค่า",
-      logout: "ออกจากระบบ",
     },
     home: {
       banner: {
@@ -1095,6 +1094,7 @@ window.languages = {
         video_quality: "คุณภาพวิดีโอ",
         mature: "เนื้อหาสำหรับผู้ใหญ่",
         about: "เกี่ยวกับ",
+        logout: "ออกจากระบบ",
       },
     },
     lists: {
@@ -1129,7 +1129,6 @@ window.languages = {
       history: "Geçmiş",
       browse: "Gözat",
       settings: "Ayarlar",
-      logout: "Çıkış",
     },
     home: {
       banner: {
@@ -1174,6 +1173,7 @@ window.languages = {
         video_quality: "Video Kalitesi",
         mature: "Olgun İçerik",
         about: "Hakkında",
+        logout: "Çıkış",
       },
     },
     lists: {
@@ -1208,7 +1208,6 @@ window.languages = {
       history: "Lịch sử",
       browse: "Duyệt",
       settings: "Cài đặt",
-      logout: "Đăng xuất",
     },
     home: {
       banner: {
@@ -1253,6 +1252,7 @@ window.languages = {
         video_quality: "Chất lượng video",
         mature: "Nội dung dành cho người trưởng thành",
         about: "Về ứng dụng",
+        logout: "Đăng xuất",
       },
     },
     lists: {

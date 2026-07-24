@@ -39,6 +39,11 @@ window.settings = {
       label: "settings.menu.about",
       type: "html",
     },
+    {
+      id: "logout",
+      label: "settings.menu.logout",
+      type: "list"
+    },
   ],
   qualities: {
     auto: "Auto",
@@ -57,6 +62,9 @@ window.settings = {
     ENABLE: "Enable Game Controller Support",
   },
   previous: NaN,
+  get logoutOptions() {
+    return {no: `${translate.go("exit.no")}`, yes: `${translate.go("exit.yes")}`};
+  },
 
   init: function () {
     var settings_element = document.createElement("div");
@@ -210,6 +218,10 @@ window.settings = {
             var options = settings.controllerSupport;
             var active = window.localStorage.getItem(CONTROLLER_KEY);
             break;
+          case "logout":
+            var options = settings.logoutOptions;
+            var active = "no";
+            break;
         }
 
         return (
@@ -327,6 +339,26 @@ window.settings = {
                 window.setControllerEnabled(value === "ENABLE");
               session.update();
             };
+            break;
+          case "logout":
+            var options = settings.logoutOptions;
+            method = function (value) {
+              if (value === "yes") {
+                if (document.getElementById(menu.id) != null) menu.destroy();
+
+                var current_id = main.state.replace("-screen", "");
+                if (window[current_id] === undefined) {
+                  console.log("Failed to find ID of current screen");
+                  menu.init();
+                  return;
+                }
+                if (document.getElementById(main.state) != null)
+                  window[current_id].destroy();
+                session.clear();
+                login.init();
+              }
+            };
+            break;
         }
         method(Object.keys(options)[index]);
         optionsMenu.removeClass("active");

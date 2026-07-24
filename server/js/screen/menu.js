@@ -46,13 +46,6 @@ window.menu = {
       tool: true,
       action: "settings.init",
     },
-    {
-      id: "logout",
-      label: "menu.logout",
-      icon: "fa-solid fa-sign-out",
-      tool: true,
-      event: "logout",
-    },
   ],
   selected: 2,
   previous: NaN,
