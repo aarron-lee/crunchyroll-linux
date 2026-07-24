@@ -28,14 +28,14 @@ jobs:
 
       - name: build AppImage
         run: |
-          pnpm install --dangerously-allow-all-builds
+          pnpm install --ignore-scripts
           pnpm run build
           chmod +x dist/Crunchyroll_v*_linux.AppImage
         continue-on-error: true
 
       - name: build zip
         run: |
-          pnpm install --dangerously-allow-all-builds
+          pnpm install --ignore-scripts
           pnpm run flatpak:build-unpacked
           zip -r dist/crunchyroll_unpacked.zip dist/linux-unpacked
         continue-on-error: true
