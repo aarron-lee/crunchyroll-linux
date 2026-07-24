@@ -35,8 +35,11 @@ window.home_episodes = {
         home_episodes.data.seasons = mapper.seasons(response);
         var seasons_html = "";
         home_episodes.data.seasons.forEach((season, index) => {
+          if(season.audio_locale.length) {
+            var audio_locale = `(<i class="fa-solid fa-volume-low"></i> ${season.audio_locale})`
+          }
           seasons_html += `
-          <div class="season${index === 0 ? " selected active" : ""}">${season.title}</div>`;
+          <div class="season${index === 0 ? " selected active" : ""}">${season.title} ${audio_locale}</div>`;
         });
         $(".seasons #seasons-list-offset").eq(0).html(seasons_html);
         home_episodes.load(home_episodes.data.seasons[0]);

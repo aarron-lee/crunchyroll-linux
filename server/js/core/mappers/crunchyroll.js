@@ -109,11 +109,20 @@ window.mapper = {
         );
         return is_audio_match || (!season.is_dubbed && !has_audio_match);
       })
-      .map((season) => ({
-      id: season.id,
-      title: season.title,
-      number: season.season_number,
-    }));
+      .map((season) => {
+        try {
+          var audio_locale = season.audio_locale.split('-')[0].toUpperCase()
+        } catch (e) {
+          console.error(e);
+          audio_locale = '';
+        }
+        return {
+          id: season.id,
+          title: season.title,
+          number: season.season_number,
+          audio_locale
+        };
+      });
   },
 
   episodes: function (response, callback) {
