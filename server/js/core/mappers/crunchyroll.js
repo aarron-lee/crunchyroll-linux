@@ -99,7 +99,17 @@ window.mapper = {
   },
 
   seasons: function (response) {
-    return response.items.map((season) => ({
+    return response.items
+      .filter((season) => {
+        var is_audio_match =
+          season.audio_locale === session.storage.account.audio ||
+          season.audio_locales.includes(session.storage.account.audio);
+        var has_audio_match = season.versions.some(
+          (version) => version.audio_locale === session.storage.account.audio,
+        );
+        return is_audio_match || (!season.is_dubbed && !has_audio_match);
+      })
+      .map((season) => ({
       id: season.id,
       title: season.title,
       number: season.season_number,
