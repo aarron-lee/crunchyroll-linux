@@ -129,9 +129,14 @@ window.home_episodes = {
   },
 
   premium: function (episode) {
-    return !session.storage.account.premium && episode.premium
-      ? `<i class="fa-solid fa-crown premium"></i>`
-      : "";
+    try {
+      return !session.storage.account.premium && episode.premium
+        ? `<i class="fa-solid fa-crown premium"></i>`
+        : "";
+    } catch(e) {
+      console.error(e);
+      return episode.premium ? `<i class="fa-solid fa-crown premium"></i>` : "";
+    }
   },
 
   destroy: function () {
