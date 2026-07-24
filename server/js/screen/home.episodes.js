@@ -129,7 +129,9 @@ window.home_episodes = {
   },
 
   premium: function (episode) {
-    return episode.premium ? `<i class="fa-solid fa-crown premium"></i>` : "";
+    return !session.storage.account.premium && episode.premium
+      ? `<i class="fa-solid fa-crown premium"></i>`
+      : "";
   },
 
   destroy: function () {
