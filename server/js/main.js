@@ -45,18 +45,22 @@ window.main = {
 
   events: {
     logout: function () {
-      if (document.getElementById(menu.id) != null) menu.destroy();
+      const logout = () => {
+        if (document.getElementById(menu.id) != null) menu.destroy();
 
-      var current_id = main.state.replace("-screen", "");
-      if (window[current_id] === undefined) {
-        console.log("Failed to find ID of current screen");
-        menu.init();
-        return;
+        var current_id = main.state.replace("-screen", "");
+        if (window[current_id] === undefined) {
+          console.log("Failed to find ID of current screen");
+          menu.init();
+          return;
+        }
+        if (document.getElementById(main.state) != null)
+          window[current_id].destroy();
+        session.clear();
+        login.init();
       }
-      if (document.getElementById(main.state) != null)
-        window[current_id].destroy();
-      session.clear();
-      login.init();
+
+      exit.init(logout);
     },
 
     login: function () {

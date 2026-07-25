@@ -9,12 +9,16 @@ window.exit = {
     exit_element.id = exit.id;
     exit.logout = logout;
 
+    var logout_message = translate.go(exit.logout ? "exit.message_logout" : "exit.message");
+
+    if (typeof logout == 'function') {
+      logout_message = `${translate.go('menu.logout')}?`;
+    }
+
     exit_element.innerHTML =
       '<div class="content">' +
       '  <div class="window">' +
-      `    <div class="text">${translate.go(
-        `exit.message${exit.logout ? "_logout" : ""}`,
-      )}` +
+      `    <div class="text">${logout_message}` +
       '    <div class="buttons">' +
       `      <div class="button" id="exit-screen-yes">${translate.go(
         "exit.yes",
@@ -70,6 +74,11 @@ window.exit = {
 
   action: function (selected) {
     if (selected) {
+      if (typeof exit.logout == 'function') {
+        exit.destroy()
+        exit.logout()
+        return;
+      }
       if (exit.logout) {
         session.clear();
       }
