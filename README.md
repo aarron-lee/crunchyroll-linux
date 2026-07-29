@@ -120,6 +120,15 @@ Q: How do I enable full screen while in desktop?
 
 A: you can press the `f11` key to fullscreen the app. alternatively, add the env var `FULL_SCREEN=1` to the application
 
+Alternatively, you can use gamescope to run the app in fullscreen.
+
+Example:
+
+```bash
+# Run the game at 1080p, but scale output to a fullscreen 2560×1440 window
+gamescope -w 1920 -h 1080 -W 2560 -H 1440 -b -- $HOME/AppImages/crunchyroll.appimage --no-sandbox
+```
+
 ## Troubleshooting
 
 If videos fail to load, try deleting your config directory and restarting the app.
