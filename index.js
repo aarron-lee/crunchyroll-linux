@@ -4,17 +4,25 @@ const path = require("path");
 
 function createWindow() {
   let fullscreen = false;
+  let fullscreenPreferences = {
+    width: 1920,
+    height: 1080,
+    minWidth: 1920,
+    minHeight: 1080
+  };
   if (process.env.FULL_SCREEN === "1") {
+    console.log('fullscreen detected')
     fullscreen = true;
+    fullscreenPreferences = {
+      minWidth: 1920,
+      minHeight: 1080
+    };
   }
 
   const win = new BrowserWindow({
     fullscreen,
     autoHideMenuBar: true,
-    width: 1920,
-    height: 1080,
-    maxHeight: 1080,
-    maxWidth: 1920,
+    ...fullscreenPreferences,
     webPreferences: {
       nodeIntegration: false,
       webSecurity: false,
