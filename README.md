@@ -144,3 +144,7 @@ rm -rf $HOME/.config/crunchyroll-linux/
 Massive shoutout to [jhassan8](https://github.com/jhassan8), the original dev of the Crunchyroll app
 
 Electron App Icon: https://www.flaticon.com/free-icons/crunchyroll
+
+## Misc
+
+alternative: https://github.com/nicholasyoannou/crunchy-deck
